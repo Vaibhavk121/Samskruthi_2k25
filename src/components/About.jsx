@@ -60,12 +60,12 @@ const About = () => {
       <img 
         src="/images/fish1.png" 
         alt="" 
-        className="absolute top-7 left-9 w-16 h-auto animate-float" 
+        className="absolute top-7 left-9 w-16 h-auto animate-float opacity-20" 
       />
       <img 
         src="/images/fish2.png" 
         alt="" 
-        className="absolute bottom-23 right-10 w-20 h-auto animate-float" 
+        className="absolute bottom-23 right-10 w-20 h-auto animate-float opacity-20" 
         style={{ animationDelay: '1s' }} 
       />
     </section>
