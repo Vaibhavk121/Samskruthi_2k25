@@ -121,3 +121,33 @@ body {
   --accent-color: #003566;
   --text-color: #FFD60A;
 }
+
+
+/* Add these custom classes for 3D card flip effect */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.card-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card-container:hover {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
