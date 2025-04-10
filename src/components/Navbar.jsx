@@ -31,9 +31,22 @@ const Navbar = () => {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      // Close mobile menu first
       setMobileMenuOpen(false);
-      setActiveSection(id);
+      
+      // Small delay to allow mobile menu to close
+      setTimeout(() => {
+        const headerOffset = 80; // Account for fixed header
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+        
+        setActiveSection(id);
+      }, 100);
     }
   };
 
