@@ -1,7 +1,7 @@
 // First, let's add imports for event-specific images
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaTheaterMasks, FaPaintBrush, FaMusic, FaFilm, FaCamera, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+
 
 // Import event images
 import event1 from '/images/events/1.jpg';
@@ -103,23 +103,34 @@ const Events = () => {
           Events
         </motion.h2>
         
-        {/* Event Carousel */}
+        {/* Event Carousel with Blur Transition */}
         <div className="mb-16 max-w-4xl mx-auto">
           <div className="relative overflow-hidden rounded-xl shadow-2xl h-64 md:h-80 lg:h-96">
-            {/* Carousel images */}
-            <div className="absolute inset-0 flex transition-transform duration-500 ease-in-out" 
-                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
-              {eventImages.map((image, index) => (
-                <div key={index} className="min-w-full h-full">
-                  <img 
-                    src={image} 
-                    alt={`Event ${index + 1}`} 
-                    className="w-full h-full object-cover"
-                  />
-                  
-                </div>
-              ))}
-            </div>
+            {/* Carousel images with blur transition */}
+            <AnimatePresence initial={false}>
+              <motion.div 
+                key={currentSlide}
+                className="absolute inset-0"
+                initial={{ opacity: 0, filter: "blur(8px)" }}
+                animate={{ opacity: 1, filter: "blur(0px)" }}
+                exit={{ opacity: 0, filter: "blur(8px)" }}
+                transition={{ 
+                  duration: 1.2,
+                  ease: "easeInOut",
+                  opacity: { duration: 1 },
+                  filter: { duration: 1.2 }
+                }}
+              >
+                <img 
+                  src={eventImages[currentSlide]} 
+                  alt={`Event ${currentSlide + 1}`} 
+                  className="w-full h-full object-cover"
+                />
+              </motion.div>
+            </AnimatePresence>
+            
+            
+            
           </div>
         </div>
         
