@@ -89,6 +89,12 @@ const Footer = () => {
           <p className="text-white text-sm">
             &copy; {new Date().getFullYear()} Samskruthi 2K25. All rights reserved.
           </p>
+          {/* <h3 className="text-white text-sm">
+            Made with 💖  By Vaibhav Kumar
+          </h3>
+          <h3 className="text-white text-sm">
+            (😎Your friendly tech geek😉)
+          </h3> */}
         </div>
       </div>
       
