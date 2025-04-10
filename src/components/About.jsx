@@ -3,12 +3,14 @@ import { motion } from 'framer-motion';
 import banner from '/images/banner.jpg';
 const About = () => {
   return (
-    <section id="about" className="py-20 relative overflow-hidden  dark:bg-[#001D3D]/50">
-      <div className="container mx-auto px-4">
+    <section id="about" className="py-20 relative overflow-hidden dark:bg-[#001D3D]/50" style={{ opacity: 1, visibility: 'visible' }}>
+      <div className="container mx-auto px-4" style={{ opacity: 1, visibility: 'visible' }}>
         <div className="max-w-4xl mx-auto">
           <motion.h2 
             data-aos="fade-up"
+            data-aos-once="false"
             className="text-4xl font-bold mb-8 text-center glow"
+            style={{ opacity: 1, visibility: 'visible' }}
           >
             About Samskruthi 2K25
           </motion.h2>

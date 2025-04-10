@@ -20,12 +20,12 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Initialize AOS with optimized settings
+    // Initialize AOS with mobile-optimized settings
     AOS.init({
       duration: 800,
-      once: true, // Only animate once to improve performance
+      once: true,
       mirror: false,
-      disable: 'mobile' // Disable on mobile for better performance
+      disable: window.innerWidth < 768 // Disable animations on mobile
     });
 
     const timer = setTimeout(() => {

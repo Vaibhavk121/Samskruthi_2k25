@@ -121,21 +121,28 @@ const Gallery = () => {
   return (
     <section id="gallery" className="py-12 bg-deep-blue/50">
       <div className="container mx-auto px-4">
-        {/* Header section with improved visibility */}
-        <div className="text-center mb-10">
-        <motion.h2 
-            data-aos="fade-up"
-            className="text-4xl font-bold mb-8 text-center glow"
+        {/* Header section with improved visibility for mobile */}
+        <div className="text-center mb-10 relative z-10">
+          <h2 
+            className="text-4xl font-bold mb-4 text-center text-white"
+            style={{ 
+              opacity: 1, 
+              visibility: 'visible',
+              textShadow: '0 0 10px rgba(255, 255, 255, 0.7)'
+            }}
           >
             Gallery
-          </motion.h2>
-        <motion.h6 
-            data-aos="fade-up"
-            className="text-4xl font-bold mb-8 text-center glow"
+          </h2>
+          <h6 
+            className="text-xl md:text-2xl font-bold mb-6 text-center text-white"
+            style={{ 
+              opacity: 1, 
+              visibility: 'visible',
+              textShadow: '0 0 8px rgba(255, 255, 255, 0.7)'
+            }}
           >
             Have a Glimpse of Samskruthi
-          </motion.h6>
-
+          </h6>
         </div>
 
         {/* 2024 Carousel - Left to Right */}

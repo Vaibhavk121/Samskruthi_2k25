@@ -4,12 +4,14 @@ import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaEnvelope, FaPhone, FaM
 
 const Footer = () => {
   return (
-    <footer id="contact" className="pt-16 pb-8 relative overflow-hidden bg-deep-blue dark:bg-[#000814]">
-      <div className="container mx-auto px-4">
+    <footer id="contact" className="pt-16 pb-8 relative overflow-hidden bg-deep-blue dark:bg-[#000814]" style={{ opacity: 1, visibility: 'visible' }}>
+      <div className="container mx-auto px-4" style={{ opacity: 1, visibility: 'visible' }}>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <motion.div 
             data-aos="fade-up"
+            data-aos-once="false"
             className="text-center md:text-left"
+            style={{ opacity: 1, visibility: 'visible' }}
           >
             {/* Replace text with logo image */}
             <div className="mb-4">

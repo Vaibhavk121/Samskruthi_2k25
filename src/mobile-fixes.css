@@ -1,0 +1,40 @@
+/* Mobile visibility fixes */
+@media (max-width: 768px) {
+  #about, #gallery, #register, #contact, 
+  .glow, [data-aos], .text-center {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+  
+  /* Fix for Gallery headers */
+  #gallery h2, #gallery h6 {
+    display: block !important;
+    opacity: 1 !important;
+  }
+  
+  /* Fix for About section */
+  #about .container {
+    display: block !important;
+  }
+  
+  /* Fix for Registration section */
+  #register .container {
+    display: block !important;
+  }
+  
+  /* Fix for Footer/Contact section */
+  #contact .container {
+    display: block !important;
+  }
+  
+  /* Fix for Sponsors section */
+  .animate-marquee-mobile {
+    animation-duration: 20s !important;
+  }
+  
+  /* Fix for CountdownTimer */
+  .countdown-container {
+    display: block !important;
+  }
+}

@@ -7,11 +7,13 @@ const Registration = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section id="register" className="py-20 relative overflow-hidden">
-      <div className="container mx-auto px-4">
+    <section id="register" className="py-20 relative overflow-hidden" style={{ opacity: 1, visibility: 'visible' }}>
+      <div className="container mx-auto px-4" style={{ opacity: 1, visibility: 'visible' }}>
         <motion.h2 
           data-aos="fade-up"
+          data-aos-once="false"
           className="text-4xl font-bold mb-8 text-center glow"
+          style={{ opacity: 1, visibility: 'visible' }}
         >
           Registration
         </motion.h2>
