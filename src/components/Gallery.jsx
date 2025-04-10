@@ -32,7 +32,6 @@ import  image2k24_27 from '/images/gallery/2k24/27.jpg';
 import  image2k24_28 from '/images/gallery/2k24/28.jpg';
 import  image2k24_29 from '/images/gallery/2k24/29.jpg';
 import  image2k24_30 from '/images/gallery/2k24/30.jpg';
-import  image2k24_31 from '/images/gallery/2k24/31.jpg';
 import  image2k23_1 from '/images/gallery/2k23/1.jpg';
 import  image2k23_2 from '/images/gallery/2k23/2.jpg';
 import  image2k23_3 from '/images/gallery/2k23/3.jpg';
@@ -89,7 +88,7 @@ const Gallery = () => {
     { src: image2k24_28, alt: 'Cultural Event' },
     { src: image2k24_29, alt: 'Cultural Event' },
     { src: image2k24_30, alt: 'Cultural Event' },
-    { src: image2k24_31, alt: 'Cultural Event' },
+    
 
     // ... add all 2024 images
   ];
