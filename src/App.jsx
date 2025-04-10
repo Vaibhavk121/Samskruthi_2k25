@@ -30,7 +30,7 @@ function App() {
 
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000); // Reduced loading time
+    },4000); // Reduced loading time
 
     return () => clearTimeout(timer);
   }, []);
