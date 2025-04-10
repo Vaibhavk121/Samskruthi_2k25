@@ -92,8 +92,16 @@ const Footer = () => {
         </div>
       </div>
       
-      {/* Seabed decoration */}
-      <div className="absolute bottom-0 left-0 w-full h-16 bg-contain bg-repeat-x" style={{ backgroundImage: 'url(/images/seabed.png)' }}></div>
+      <div
+  className="absolute bottom-0 left-0 w-full aspect-[12/1] opacity-30 pointer-events-none"
+  style={{
+    backgroundImage: 'url(/images/seabed.gif)',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: '100% 100%',
+    backgroundPosition: 'bottom center',
+  }}
+></div>
+
     </footer>
   );
 };

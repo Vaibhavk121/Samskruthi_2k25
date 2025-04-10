@@ -184,8 +184,18 @@ const Events = () => {
       </div>
       
       {/* Floating sea creatures */}
-      <img src="/images/seahorse.png" alt="" className="absolute top-40 right-5 w-16 h-auto animate-float" style={{ animationDelay: '0.5s' }} />
-      <img src="/images/starfish.png" alt="" className="absolute bottom-20 left-10 w-14 h-auto animate-float" style={{ animationDelay: '1.5s' }} />
+      <img 
+        src="/images/seahorse.webp" 
+        alt="" 
+        className="absolute top-40 right-5 w-16 h-auto animate-float opacity-30 md:opacity-40 pointer-events-none z-0" 
+        style={{ animationDelay: '0.5s' }} 
+      />
+      <img 
+        src="/images/starfish.webp" 
+        alt="" 
+        className="absolute bottom-20 left-10 w-14 h-auto animate-float opacity-30 md:opacity-40 pointer-events-none z-0" 
+        style={{ animationDelay: '1.5s' }} 
+      />
     </section>
   );
 };
