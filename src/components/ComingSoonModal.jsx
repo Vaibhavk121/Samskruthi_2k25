@@ -53,7 +53,7 @@ const ComingSoonModal = ({ isOpen, onClose }) => {
                   <div className="flex justify-center items-center gap-2 text-white/80">
                     <span className="text-sm">Samskruthi 2K25</span>
                     <span className="w-1.5 h-1.5 rounded-full bg-light-blue"></span>
-                    <span className="text-sm">April 24-25, 2025</span>
+                    <span className="text-sm">April 24-26, 2025</span>
                   </div>
                   
                   <motion.div
