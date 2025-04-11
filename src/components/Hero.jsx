@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaArrowDown, FaClock, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
-import EventModal from './EventModal';
+// import EventModal from './EventModal';
+import ComingSoonModal from './ComingSoonModal';
 
 // Import images
 import epgiLogo from '/images/gallery/logos/EPGI_LOGO.png';
@@ -16,6 +17,9 @@ import bgvideo from '/background_video/hero_bg.mp4'
 
 
 const Hero = () => {
+  // Add this state declaration at the top with other states
+  const [isComingSoonModalOpen, setIsComingSoonModalOpen] = useState(false);
+  
   // Countdown timer state
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -214,13 +218,13 @@ const Hero = () => {
         >
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button 
-              onClick={() => window.open('/brochure.pdf', '_blank')}
+              onClick={() => setIsComingSoonModalOpen(true)}
               className="bubble-button primary"
             >
               Download Brochure
             </button>
             <button 
-              onClick={() => setIsModalOpen(true)}
+              onClick={() => setIsComingSoonModalOpen(true)}
               className="bubble-button secondary"
             >
               Register Now
@@ -245,7 +249,13 @@ const Hero = () => {
       </div>
       
       {/* Event Modal */}
-      <EventModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      {/* <EventModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+       */}
+      {/* Move the ComingSoonModal inside the section, before the closing tag */}
+      <ComingSoonModal 
+        isOpen={isComingSoonModalOpen} 
+        onClose={() => setIsComingSoonModalOpen(false)} 
+      />
     </section>
   );
 };
