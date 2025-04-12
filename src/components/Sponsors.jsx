@@ -92,7 +92,7 @@ const Sponsors = () => {
               Interested in sponsoring Samskruthi 2K25?
             </p>
             <a 
-              href="mailto:sponsors@samskruthi2k25.com" 
+              href="mailto:samskruthi@eastpoint.ac.in" 
               className="inline-block bubble-button bg-light-blue/20 hover:bg-light-blue/30 text-white dark:bg-[#003566]/50 dark:hover:bg-[#003566]/70 font-medium py-2 px-6 rounded-full transition-all duration-300"
             >
               Become a Sponsor

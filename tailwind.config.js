@@ -6,10 +6,10 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'marquee': 'marquee 25s linear infinite',
-        'marquee-mobile': 'marquee 15s linear infinite',
-        'scroll-left': 'scroll-left 40s linear infinite',
-        'scroll-right': 'scroll-right 40s linear infinite',
+        'marquee': 'marquee 20s linear infinite',
+        'marquee-mobile': 'marquee 10s linear infinite',
+        'scroll-left': 'scroll-left 20s linear infinite',
+        'scroll-right': 'scroll-right 30s linear infinite',
       },
       keyframes: {
         marquee: {
