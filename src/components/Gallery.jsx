@@ -191,10 +191,9 @@ const Gallery = () => {
 
         {/* 2022 Carousel - Left to Right */}
         <div className="mb-12">
-         
           <div className="overflow-hidden relative">
             <div className="flex gap-4 animate-scroll-left whitespace-nowrap will-change-transform">
-              {[...images2022].map((image, index) => (
+              {[...images2022, ...images2022].map((image, index) => (
                 <div 
                   key={index}
                   className="min-w-[250px] h-[180px] rounded-lg overflow-hidden flex-shrink-0 cursor-pointer"

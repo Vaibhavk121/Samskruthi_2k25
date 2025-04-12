@@ -70,7 +70,7 @@ const Footer = () => {
             className="text-center md:text-right"
           >
             <h3 className="text-2xl font-bold mb-4 text-white">Contact Us</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 mb-4">
               <li className="flex items-center justify-center md:justify-end text-light-blue dark:text-[#FFD60A]">
                 <FaEnvelope className="mr-2" />
                 <a href="mailto:registration.samskruthi@eastpoint.ac.in" className="hover:text-white dark:hover:text-white transition-colors duration-300">registration.samskruthi@eastpoint.ac.in</a>
@@ -79,11 +79,20 @@ const Footer = () => {
                 <FaPhone className="mr-2" />
                 <a href="tel:+91 8145645183" className="hover:text-white dark:hover:text-white transition-colors duration-300">+91 8145645183</a>
               </li>
-              <li className="flex items-center justify-center md:justify-end text-light-blue dark:text-[#FFD60A]">
-                <FaMapMarkerAlt className="mr-2" />
-                <span>East Point Group  of Institutions</span>
-              </li>
+              
             </ul>
+            <div className="w-[300px] md:w-[400px] ml-auto mr-auto md:mr-0 h-48 rounded-lg overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9999999999995!2d77.7169929!3d13.0500747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1019aaaaaaab%3A0x2a4d23a66cafaaf7!2sEast%20Point%20Group%20of%20Institutions!5e0!3m2!1sen!2sin!4v1234567890!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0, filter: 'invert(95%) hue-rotate(180deg)' }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-lg"
+              ></iframe>
+            </div>
           </motion.div>
         </div>
         
