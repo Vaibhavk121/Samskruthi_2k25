@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaArrowDown, FaClock, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
-// import EventModal from './EventModal';
+import EventModal from './EventModal';
 import ComingSoonModal from './ComingSoonModal';
 
 // Import images
@@ -17,8 +17,8 @@ import bgvideo from '/background_video/hero_bg.mp4'
 
 
 const Hero = () => {
-  // Add this state declaration at the top with other states
   const [isComingSoonModalOpen, setIsComingSoonModalOpen] = useState(false);
+  const [isEventModalOpen, setIsEventModalOpen] = useState(false);  // Add this state
   
   // Countdown timer state
   const [timeLeft, setTimeLeft] = useState({
@@ -218,18 +218,24 @@ const Hero = () => {
         >
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button 
-              onClick={() => setIsComingSoonModalOpen(true)}
+              onClick={() => setIsEventModalOpen(true)}
               className="bubble-button primary"
             >
               Download Brochure
             </button>
             <button 
-              onClick={() => setIsComingSoonModalOpen(true)}
+              onClick={() => setIsEventModalOpen(true)}  // Changed from setIsComingSoonModalOpen
               className="bubble-button secondary"
             >
               Register Now
             </button>
           </div>
+
+          {/* Remove duplicate ComingSoonModal and keep only one EventModal */}
+          <EventModal 
+            isOpen={isEventModalOpen} 
+            onClose={() => setIsEventModalOpen(false)} 
+          />
         </motion.div>
         
         {/* Event date and location */}

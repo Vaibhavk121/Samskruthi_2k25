@@ -2,11 +2,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import ComingSoonModal from './ComingSoonModal';
+import EventModal from './EventModal';  // Change this import
 
 const Registration = () => {
   // Update the state name
-  const [isComingSoonModalOpen, setIsComingSoonModalOpen] = useState(false);
+  const [isEventModalOpen, setIsEventModalOpen] = useState(false);  // Change this state
 
   return (
     <section id="register" className="py-20 relative overflow-hidden" style={{ opacity: 1, visibility: 'visible' }}>
@@ -34,7 +34,7 @@ const Registration = () => {
               </p>
               
               <button 
-                onClick={() => setIsComingSoonModalOpen(true)}
+                onClick={() => setIsEventModalOpen(true)}  // Change this onClick
                 className="bubble-button inline-flex items-center bg-light-blue hover:bg-blue-600 text-deep-blue dark:bg-[#003566] dark:hover:bg-[#004D99] dark:text-[#FFD60A] font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 Explore Events & Register <FaExternalLinkAlt className="ml-2" />
@@ -46,8 +46,11 @@ const Registration = () => {
             </div>
           </motion.div>
           
-          {/* Replace EventModal with ComingSoonModal */}
-          <ComingSoonModal isOpen={isComingSoonModalOpen} onClose={() => setIsComingSoonModalOpen(false)} />
+          {/* Update modal component */}
+          <EventModal 
+            isOpen={isEventModalOpen} 
+            onClose={() => setIsEventModalOpen(false)} 
+          />
         </div>
       </div>
       
