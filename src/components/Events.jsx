@@ -66,7 +66,9 @@ const Events = () => {
     { id: 6, title: 'Photography' },
     { id: 7, title: 'Mehendi' },
     { id: 8, title: 'Quiz' },
-    { id: 9, title: 'Spoken Poetry' }
+    { id: 9, title: 'Spoken Poetry' },
+    { id: 10, title: 'Standup Comedy' },
+    { id: 11, title: 'Skit' }
   ];
 
   // Container variants for optimized animations
@@ -219,6 +221,8 @@ const Events = () => {
                             event.id === 6 ? "Capture stunning moments through your lens in this photography contest." :
                             event.id === 7 ? "Create intricate mehendi designs in this traditional art competition." :
                             event.id === 8 ? "Test your knowledge across various topics in this challenging quiz." :
+                            event.id === 10 ? "Showcase your comedic talent and make the audience laugh with your original standup routine." :
+                            event.id === 11 ? "Present a theatrical performance with your team in this entertaining skit competition." :
                             "Express yourself through spoken poetry in this powerful verbal art form."
                           )}
                         </p>
