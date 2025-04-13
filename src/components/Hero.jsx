@@ -218,7 +218,7 @@ const Hero = () => {
         >
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button 
-              onClick={() => window.open('./samskruthi2k25.pdf', '_blank')}
+              onClick={() => window.open('/Samskruthi2K25.pdf', '_blank')}
               className="bubble-button primary"
             >
               Download Brochure
