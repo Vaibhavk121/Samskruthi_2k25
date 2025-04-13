@@ -38,7 +38,7 @@ const EventModal = ({ isOpen, onClose }) => {
               
               <div className="space-y-3 sm:space-y-4">
                 <button 
-                  onClick={() => window.open('/Samskruthi2K25.pdf', '_blank')}
+                  onClick={() => window.open('./samskruthi2k25.pdf', '_blank')}
                   className="w-full flex items-center justify-center gap-3 bg-light-blue hover:bg-blue-600 text-deep-blue py-2.5 sm:py-3 px-4 rounded-lg transition-all duration-300"
                 >
                   <FaDownload /> Download Brochure
