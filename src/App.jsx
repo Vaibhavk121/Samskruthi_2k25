@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Analytics } from "@vercel/analytics/react"
 
 // Components
 import Navbar from './components/Navbar';
@@ -42,6 +43,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#000814] to-[#001D3D]">
       <Bubbles />
+      <Analytics />
       <Navbar />
       <main>
         <Hero />
