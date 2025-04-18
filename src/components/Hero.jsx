@@ -217,6 +217,38 @@ const Hero = () => {
           className="space-y-4 mb-12"
         >
           <div className="flex flex-col sm:flex-row justify-center gap-4">
+  <button
+    onClick={() =>
+      window.open(
+        'https://docs.google.com/forms/d/e/1FAIpQLSf50gSGoVW3a8wmwRDVNzqJ_fTcNlpzrB3QgCQ-pwXptfO_bQ/viewform',
+        '_blank'
+      )
+    }
+    className="golden-button"
+  >
+    Register For Concert & DJ Night
+  </button>
+
+  <style jsx>{`
+    .golden-button {
+      background: linear-gradient(45deg, #ffd700, #ffcc00, #fff8dc);
+      color: #4b2e00;
+      font-weight: bold;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 9999px;
+      box-shadow: 0 0 10px #ffd700, 0 0 20px #ffa500;
+      transition: all 0.3s ease-in-out;
+    }
+    .golden-button:hover {
+      background: linear-gradient(45deg, #fff8dc, #ffd700, #ffcc00);
+      box-shadow: 0 0 15px #ffcc00, 0 0 25px #ffa500;
+      transform: scale(1.05);
+    }
+  `}</style>
+</div>
+
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button 
               onClick={() => window.open('/Samskruthi2K25.pdf', '_blank')}
               className="bubble-button primary"
@@ -227,7 +259,7 @@ const Hero = () => {
               onClick={() => setIsEventModalOpen(true)}  // Changed from setIsComingSoonModalOpen
               className="bubble-button secondary"
             >
-              Register Now
+              Cultural event Registration
             </button>
           </div>
 
