@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { FaArrowDown, FaClock, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
 import EventModal from './EventModal';
 import ComingSoonModal from './ComingSoonModal';
+// Add this import at the top with other imports
+import ConcertModal from './ConcertModal';
 
 // Import images
 import epgiLogo from '/images/gallery/logos/EPGI_LOGO.png';
@@ -18,7 +20,8 @@ import bgvideo from '/background_video/hero_bg.mp4'
 
 const Hero = () => {
   const [isComingSoonModalOpen, setIsComingSoonModalOpen] = useState(false);
-  const [isEventModalOpen, setIsEventModalOpen] = useState(false);  // Add this state
+  const [isEventModalOpen, setIsEventModalOpen] = useState(false);
+  const [isConcertModalOpen, setIsConcertModalOpen] = useState(false); // Add this state
   
   // Countdown timer state
   const [timeLeft, setTimeLeft] = useState({
@@ -216,38 +219,39 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="space-y-4 mb-12"
         >
+          {/* Concert registration button */}
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-  <button
-    onClick={() =>
-      window.open(
-        'https://docs.google.com/forms/d/e/1FAIpQLSf50gSGoVW3a8wmwRDVNzqJ_fTcNlpzrB3QgCQ-pwXptfO_bQ/viewform',
-        '_blank'
-      )
-    }
-    className="golden-button"
-  >
-    Register For Concert & DJ Night
-  </button>
-
-  <style jsx>{`
-    .golden-button {
-      background: linear-gradient(45deg, #ffd700, #ffcc00, #fff8dc);
-      color: #4b2e00;
-      font-weight: bold;
-      border: none;
-      padding: 1rem 2rem;
-      border-radius: 9999px;
-      box-shadow: 0 0 10px #ffd700, 0 0 20px #ffa500;
-      transition: all 0.3s ease-in-out;
-    }
-    .golden-button:hover {
-      background: linear-gradient(45deg, #fff8dc, #ffd700, #ffcc00);
-      box-shadow: 0 0 15px #ffcc00, 0 0 25px #ffa500;
-      transform: scale(1.05);
-    }
-  `}</style>
-</div>
-
+            <button
+              onClick={() => setIsConcertModalOpen(true)}
+              className="golden-button"
+            >
+              Register For Concert & DJ Night
+            </button>
+            
+            <style jsx>{`
+              .golden-button {
+                background: linear-gradient(45deg, #ffd700, #ffcc00, #fff8dc);
+                color: #4b2e00;
+                font-weight: bold;
+                border: none;
+                padding: 1rem 2rem;
+                border-radius: 9999px;
+                box-shadow: 0 0 10px #ffd700, 0 0 20px #ffa500;
+                transition: all 0.3s ease-in-out;
+              }
+              .golden-button:hover {
+                background: linear-gradient(45deg, #fff8dc, #ffd700, #ffcc00);
+                box-shadow: 0 0 15px #ffcc00, 0 0 25px #ffa500;
+                transform: scale(1.05);
+              }
+            `}</style>
+          </div>
+          
+          {/* Concert Modal */}
+          <ConcertModal 
+            isOpen={isConcertModalOpen} 
+            onClose={() => setIsConcertModalOpen(false)} 
+          />
             <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button 
               onClick={() => window.open('/Samskruthi2K25.pdf', '_blank')}
