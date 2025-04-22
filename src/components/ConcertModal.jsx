@@ -42,7 +42,7 @@ const ConcertModal = ({ isOpen, onClose }) => {
                   
                   <div className="grid grid-cols-1 gap-3 sm:gap-4">
                     <button 
-                      onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSf50gSGoVW3a8wmwRDVNzqJ_fTcNlpzrB3QgCQ-pwXptfO_bQ/viewform', '_blank')}
+                      onClick={() => window.open('https://forms.gle/D4APTwjxHDyX5VVJA', '_blank')}
                       className="flex flex-col items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white py-3 sm:py-4 px-3 rounded-lg transition-all duration-300 border border-light-blue/30"
                     >
                       <FaUniversity size={22} className="sm:text-2xl text-light-blue" />
@@ -50,7 +50,7 @@ const ConcertModal = ({ isOpen, onClose }) => {
                     </button>
                     
                     <button 
-                      onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSf50gSGoVW3a8wmwRDVNzqJ_fTcNlpzrB3QgCQ-pwXptfO_bQ/viewform', '_blank')}
+                      onClick={() => window.open('https://forms.gle/Yb2wrV9zzFojmnjm9', '_blank')}
                       className="flex flex-col items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white py-3 sm:py-4 px-3 rounded-lg transition-all duration-300 border border-light-blue/30"
                     >
                       <FaMusic size={22} className="sm:text-2xl text-light-blue" />
