@@ -174,35 +174,7 @@ const Hero = () => {
           </div>
         </motion.div>
         
-        {/* Countdown Timer */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="mb-10"
-        >
-          <div className="flex flex-col items-center">
-            
-            <div className="flex justify-center gap-4 sm:gap-8">
-              <div className="bg-deep-blue/70 dark:bg-[#000814]/70 backdrop-blur-sm p-3 sm:p-4 rounded-lg w-16 sm:w-24 shadow-lg border border-light-blue/30 dark:border-[#FFD60A]/30">
-                <div className="text-2xl sm:text-4xl font-bold text-light-blue dark:text-[#FFD60A]">{timeLeft.days}</div>
-                <div className="text-xs sm:text-sm text-white/80">Days</div>
-              </div>
-              <div className="bg-deep-blue/70 dark:bg-[#000814]/70 backdrop-blur-sm p-3 sm:p-4 rounded-lg w-16 sm:w-24 shadow-lg border border-light-blue/30 dark:border-[#FFD60A]/30">
-                <div className="text-2xl sm:text-4xl font-bold text-light-blue dark:text-[#FFD60A]">{timeLeft.hours}</div>
-                <div className="text-xs sm:text-sm text-white/80">Hours</div>
-              </div>
-              <div className="bg-deep-blue/70 dark:bg-[#000814]/70 backdrop-blur-sm p-3 sm:p-4 rounded-lg w-16 sm:w-24 shadow-lg border border-light-blue/30 dark:border-[#FFD60A]/30">
-                <div className="text-2xl sm:text-4xl font-bold text-light-blue dark:text-[#FFD60A]">{timeLeft.minutes}</div>
-                <div className="text-xs sm:text-sm text-white/80">Minutes</div>
-              </div>
-              <div className="bg-deep-blue/70 dark:bg-[#000814]/70 backdrop-blur-sm p-3 sm:p-4 rounded-lg w-16 sm:w-24 shadow-lg border border-light-blue/30 dark:border-[#FFD60A]/30">
-                <div className="text-2xl sm:text-4xl font-bold text-light-blue dark:text-[#FFD60A]">{timeLeft.seconds}</div>
-                <div className="text-xs sm:text-sm text-white/80">Seconds</div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
+        
         
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
