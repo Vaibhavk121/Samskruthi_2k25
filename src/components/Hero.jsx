@@ -191,6 +191,16 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="space-y-4 mb-12"
         >
+
+<div className="flex flex-col sm:flex-row justify-center gap-4">
+            <button 
+              onClick={() => window.open('/Samskruthi2K25.pdf', '_blank')}
+              className="bubble-button primary"
+            >
+              Download Brochure
+            </button>
+            
+          </div>
           {/* Concert registration button */}
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button
@@ -224,20 +234,7 @@ const Hero = () => {
             isOpen={isConcertModalOpen} 
             onClose={() => setIsConcertModalOpen(false)} 
           />
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button 
-              onClick={() => window.open('/Samskruthi2K25.pdf', '_blank')}
-              className="bubble-button primary"
-            >
-              Download Brochure
-            </button>
-            <button 
-              onClick={() => setIsEventModalOpen(true)}  // Changed from setIsComingSoonModalOpen
-              className="bubble-button secondary"
-            >
-              Cultural event Registration
-            </button>
-          </div>
+            
 
           {/* Remove duplicate ComingSoonModal and keep only one EventModal */}
           <EventModal 

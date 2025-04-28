@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaMusic, FaUniversity, FaTimes } from 'react-icons/fa';
+import { FaTimes, FaCalendarCheck, FaMusic, FaInstagram} from 'react-icons/fa';
 
 const ConcertModal = ({ isOpen, onClose }) => {
   return (
@@ -32,35 +32,43 @@ const ConcertModal = ({ isOpen, onClose }) => {
                 <FaTimes size={20} />
               </button>
               
-              <h3 className="text-xl sm:text-2xl font-bold text-light-blue mb-4 sm:mb-6 text-center mt-1">
-                Concert & DJ Night Registration
-              </h3>
-              
-              <div className="space-y-3 sm:space-y-4">
-                <div className="pt-3 sm:pt-4">
-                  <p className="text-white text-center mb-3 sm:mb-4">Select your registration type</p>
-                  
-                  <div className="grid grid-cols-1 gap-3 sm:gap-4">
-                    <button 
-                      onClick={() => window.open('https://forms.gle/D4APTwjxHDyX5VVJA', '_blank')}
-                      className="flex flex-col items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white py-3 sm:py-4 px-3 rounded-lg transition-all duration-300 border border-light-blue/30"
-                    >
-                      <FaUniversity size={22} className="sm:text-2xl text-light-blue" />
-                      <span className="text-sm sm:text-base font-medium">East Point Registration</span>
-                    </button>
-                    
-                    <button 
-                      onClick={() => window.open('https://forms.gle/Yb2wrV9zzFojmnjm9', '_blank')}
-                      className="flex flex-col items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white py-3 sm:py-4 px-3 rounded-lg transition-all duration-300 border border-light-blue/30"
-                    >
-                      <FaMusic size={22} className="sm:text-2xl text-light-blue" />
-                      <span className="text-sm sm:text-base font-medium">Outside College Registration</span>
-                    </button>
-                  </div>
-                </div>
+              <div className="text-center">
+                <FaMusic size={50} className="mx-auto text-light-blue mb-4" />
+                <h3 className="text-2xl sm:text-3xl font-bold text-light-blue mb-4">
+                  Samskruthi 2K25 Ended With A Banger!
+                </h3>
                 
-                <div className="mt-4 text-white/80 text-sm text-center">
-                  <p>Join us for an unforgettable night of music and celebration!</p>
+                <div className="space-y-4 mt-6">
+                  <p className="text-white text-lg">
+                    Thank you for making this event a huge success!
+                  </p>
+                  
+                  <div className="py-4">
+                    <div className="h-0.5 w-16 bg-light-blue/30 mx-auto"></div>
+                  </div>
+                  
+                  <div className="bg-white/10 p-4 rounded-lg">
+                    <FaCalendarCheck size={24} className="mx-auto text-light-blue mb-2" />
+                    <p className="text-white font-medium">See you next year with</p>
+                    <p className="text-2xl font-bold bg-gradient-to-r from-light-blue to-white bg-clip-text text-transparent">
+                      Samskruthi 2K26!
+                    </p>
+                  </div>
+                  
+                  <div className="mt-6">
+                    <p className="text-white/70 text-sm mb-3">
+                      Follow us on social media for updates and highlights from this year's event.
+                    </p>
+                    <a 
+                      href="https://www.instagram.com/samskruthi_2k25?igsh=MXJ5M2NkM3ZxNGhsNg==" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all"
+                    >
+                     <FaInstagram size={24} />
+                      <span>@samskruthi_2k25</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </motion.div>
