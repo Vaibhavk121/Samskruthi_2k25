@@ -104,7 +104,7 @@ const Footer = () => {
             Made with 💖  By Vaibhav Kumar.
           </h3>
           <h3 className="text-white text-sm">
-            (😎Your friendly tech geek😉.)
+            (😎Your friendly tech geek😉)
           </h3>
         </div>
       </div>
