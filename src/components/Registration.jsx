@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import EventModal from './EventModal';  // Change this import
+import EventModal from './ConcertModal';  // Change this import
 
 const Registration = () => {
   // Update the state name

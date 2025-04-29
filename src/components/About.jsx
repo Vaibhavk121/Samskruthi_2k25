@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import banner from '/images/banner.jpg';
+// import banner from '/images/banner.jpg';
+import banner from '/images/highlights/thumb6.jpg';
 const About = () => {
   return (
     <section id="about" className="py-20 relative overflow-hidden dark:bg-[#001D3D]/50" style={{ opacity: 1, visibility: 'visible' }}>
@@ -35,7 +36,7 @@ const About = () => {
               className="md:w-1/2"
             >
               <p className="text-lg mb-4">
-              Samskruthi 2025 brings the magical world under the sea to life through a vibrant celebration of arts, music, dance, and creativity. This year's theme invites participants to explore the depths of cultural expression inspired by oceanic wonders.
+              Samskruthi 2k25 brings the magical world under the sea to life through a vibrant celebration of arts, music, dance, and creativity. This year's theme invites participants to explore the depths of cultural expression inspired by oceanic wonders.
               From coral reefs to mysterious deep-sea creatures, our events draw inspiration from the vast underwater world, creating a unique and immersive experience for all participants and attendees.
               </p>
             </motion.div>

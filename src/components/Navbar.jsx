@@ -7,12 +7,13 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
+  // Update the sections array in the useEffect hook
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
-
+  
       // Update active section based on scroll position
-      const sections = ['home', 'about', 'events', 'gallery', 'register', 'contact'];
+      const sections = ['home', 'highlights', 'about', 'events', 'gallery', 'register', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -23,10 +24,25 @@ const Navbar = () => {
       });
       if (current) setActiveSection(current);
     };
-
+  
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Then add the Highlights link to the navigation menu
+  // In the navigation links section:
+  <li>
+    <button
+      onClick={() => scrollToSection('highlights')}
+      className={`px-3 py-2 rounded-md text-sm font-medium ${
+        activeSection === 'highlights'
+          ? 'text-light-blue dark:text-[#FFD60A]'
+          : 'text-white hover:text-light-blue dark:hover:text-[#FFD60A]'
+      } transition-colors duration-300`}
+    >
+      Highlights
+    </button>
+  </li>
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);

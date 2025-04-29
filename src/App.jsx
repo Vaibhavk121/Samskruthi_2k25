@@ -7,6 +7,7 @@ import { Analytics } from "@vercel/analytics/react"
 // Components
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Highlights from './components/Highlights'; // Add this import
 import About from './components/About';
 import Events from './components/Events';
 import Gallery from './components/Gallery';
@@ -47,6 +48,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <Highlights /> {/* Add the Highlights component here */}
         <About />
         <Events />
         <Gallery />
