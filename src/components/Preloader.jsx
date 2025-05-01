@@ -1,11 +1,38 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Logo from '/images/samskruthi-logo.png';
+import bgvideo from '/background_video/hero_bg.mp4'; // Import the video here
 
 const Preloader = () => {
   const [dots, setDots] = useState('.');
   const [progress, setProgress] = useState(0);
   const containerRef = useRef(null);
+  const videoRef = useRef(null); // Add a ref for preloading the video
+  
+  // Preload the background video
+  useEffect(() => {
+    // Create a video element to preload the video
+    const video = document.createElement('video');
+    video.style.display = 'none';
+    video.preload = 'auto';
+    
+    // Create a source element
+    const source = document.createElement('source');
+    source.src = bgvideo;
+    source.type = 'video/mp4';
+    
+    // Append source to video and video to document
+    video.appendChild(source);
+    document.body.appendChild(video);
+    
+    // Start loading the video
+    video.load();
+    
+    // Clean up
+    return () => {
+      document.body.removeChild(video);
+    };
+  }, []);
   
   // Animate loading dots
   useEffect(() => {

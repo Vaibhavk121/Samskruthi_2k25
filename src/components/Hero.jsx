@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { FaArrowDown, FaClock, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
 import EventModal from './EventModal';
@@ -22,6 +22,7 @@ const Hero = () => {
   const [isComingSoonModalOpen, setIsComingSoonModalOpen] = useState(false);
   const [isEventModalOpen, setIsEventModalOpen] = useState(false);
   const [isConcertModalOpen, setIsConcertModalOpen] = useState(false); // Add this state
+  const videoRef = useRef(null); // Add a ref for the video element
   
   // Countdown timer state
   const [timeLeft, setTimeLeft] = useState({
@@ -69,6 +70,7 @@ const Hero = () => {
       {/* Video Background */}
       <div className="fixed inset-0 z-0">
         <video
+          ref={videoRef}
           autoPlay
           loop
           muted
