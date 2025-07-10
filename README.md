@@ -106,7 +106,7 @@ See the animated sponsor showcase in the [Sponsors](#sponsors) section.
 
 1. **Clone the repository**
    ```sh
-   git clone <repo-url>
+   git clone https://github.com/Vaibhavk121/Samskruthi_2k25.git
    cd Samskruthi_2k25
    ```
 
