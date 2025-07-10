@@ -60,17 +60,13 @@ See the animated sponsor showcase in the [Sponsors](#sponsors) section.
 ---
 
 ## 🛠️ Tech Stack
-
 <p align="center">
-  <img src="https://static.cdnlogo.com/logos/r/85/react.svg" width="40" height="40" alt="React" />
-  <img src="https://static.cdnlogo.com/logos/v/61/vite.svg" width="40" height="40" alt="Vite" />
-  <img src="https://static.cdnlogo.com/logos/t/34/tailwind-css.svg" width="40" height="40" alt="Tailwind CSS" />
-  <img src="https://www.svgrepo.com/show/306070/framer.svg" width="40" height="40" alt="Framer Motion" />
+<img src="https://skillicons.dev/icons?i=react,vite,tailwind">
+<img src="https://www.svgrepo.com/show/306070/framer.svg" width="40" height="40" alt="Framer Motion" />
   <img src="https://felixluginbuhl.com/aos/logo.png" width="40" height="40" alt="AOS Animation" />
   <img src="https://www.svgrepo.com/download/354513/vercel-icon.svg" width="40" height="40" alt="Vercel" />
 </p>
 
-</p>
 
 - **React**
 - **Vite**
