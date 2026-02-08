@@ -176,7 +176,7 @@ const ComingSoon = () => {
               Notify Me
             </motion.button> */}
             <motion.a
-              href="https://www.instagram.com/samskruthi_2k25"
+              href="https://www.instagram.com/samskruthi_2k25/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 border-2 border-blue-400 text-blue-400 font-semibold rounded-full hover:bg-blue-400 hover:text-white transition-all duration-300"
