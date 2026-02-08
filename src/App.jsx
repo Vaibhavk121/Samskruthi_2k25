@@ -1,38 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { Analytics } from "@vercel/analytics/react"
 
 // Components
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Highlights from './components/Highlights'; // Add this import
-import About from './components/About';
-import Events from './components/Events';
-import Gallery from './components/Gallery';
-import CountdownTimer from './components/CountdownTimer';
-import Registration from './components/Registration';
-import Sponsors from './components/Sponsors';
-import Footer from './components/Footer';
 import Preloader from './components/Preloader';
-import Bubbles from './components/Bubbles';
+import ComingSoon from './components/ComingSoon';
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Initialize AOS with mobile-optimized settings
-    AOS.init({
-      duration: 800,
-      once: true,
-      mirror: false,
-      disable: window.innerWidth < 768 // Disable animations on mobile
-    });
-
     const timer = setTimeout(() => {
       setLoading(false);
-    },4000); // Reduced loading time
+    }, 3000); // 3 second loading time
 
     return () => clearTimeout(timer);
   }, []);
@@ -42,22 +21,10 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#000814] to-[#001D3D]">
-      <Bubbles />
+    <>
       <Analytics />
-      <Navbar />
-      <main>
-        <Hero />
-        <Highlights /> {/* Add the Highlights component here */}
-        <About />
-        <Events />
-        <Gallery />
-        <CountdownTimer />
-        <Registration />
-        <Sponsors />
-      </main>
-      <Footer />
-    </div>
+      <ComingSoon />
+    </>
   );
 }
 

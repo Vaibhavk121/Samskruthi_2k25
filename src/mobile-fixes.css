@@ -1,5 +1,46 @@
 /* Mobile visibility fixes */
 @media (max-width: 768px) {
+  /* Coming Soon Page Mobile Fixes */
+  .min-h-screen {
+    min-height: 100vh;
+    min-height: 100dvh; /* Dynamic viewport height for mobile */
+  }
+  
+  /* Ensure all elements are visible on mobile */
+  * {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  
+  /* Mobile text sizing adjustments */
+  .text-6xl {
+    font-size: 3rem !important;
+  }
+  
+  .text-8xl {
+    font-size: 4rem !important;
+  }
+  
+  .text-4xl {
+    font-size: 2rem !important;
+  }
+  
+  .text-6xl {
+    font-size: 2.5rem !important;
+  }
+  
+  /* Countdown timer mobile adjustments */
+  .grid-cols-2 {
+    gap: 0.75rem !important;
+  }
+  
+  /* Button adjustments for mobile */
+  .px-8 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  
+  /* Legacy fixes for other components */
   #about, #gallery, #register, #contact, 
   .glow, [data-aos], .text-center {
     opacity: 1 !important;
