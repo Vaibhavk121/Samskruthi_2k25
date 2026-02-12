@@ -117,7 +117,7 @@ const ComingSoon = () => {
             Samskruthi
           </h1>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-2">
-            2K26
+            2026
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto rounded-full"></div>
         </motion.div>
@@ -129,7 +129,7 @@ const ComingSoon = () => {
           </h3>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
             Get ready for another spectacular journey into the depths of culture and creativity. 
-            Samskruthi 2K26 is preparing to bring you an unforgettable experience.
+            Samskruthi 2026 is preparing to bring you an unforgettable experience.
           </p>
         </motion.div>
 

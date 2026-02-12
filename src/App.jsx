@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react"
 import Preloader from './components/Preloader';
 import ComingSoon from './components/ComingSoon';
 
+
 function App() {
   const [loading, setLoading] = useState(true);
 
